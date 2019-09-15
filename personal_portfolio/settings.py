@@ -25,7 +25,7 @@ SECRET_KEY = 'i)p31no6-f6-7xzo7d7vdhohcyi#s=!_f&2mm(ud&ec0ti()wz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tr-1000-portfolio.herokuapp.com', 'localhost:8000']
+ALLOWED_HOSTS = ['tr-1000-portfolio.herokuapp.com', 'localhost']
 
 
 # Application definition

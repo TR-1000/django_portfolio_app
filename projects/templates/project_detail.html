@@ -11,7 +11,7 @@
         <img src="{% static project.image %}" alt="" width="100%">
     </div>
     <div class="col s12 m6">
-        <h3>{{ project.title }}</h3>
+        <a target="_blank" href="{{ project.link }}"><h3>{{ project.title }}</h3></a>
         <br>
         <h5>About the project:</h5>
         <p>{{ project.description }}</p>
