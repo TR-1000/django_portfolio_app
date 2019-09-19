@@ -18,18 +18,22 @@ img {
   margin-right: auto;
 }
 
-.row {
-  margin-top: 125px;
-}
-
-.card {
-  padding: 15px;
+.logo-style {
+  color: #039be5
 }
 
 .btn {
   background-color: #039be5
 }
 
-.logo-style {
-  color: #039be5
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: #6bc4f0;
+}
+
+.row {
+  margin-top: 125px;
+}
+
+.card {
+  padding: 15px;
 }
