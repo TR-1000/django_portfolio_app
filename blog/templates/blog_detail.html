@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block page_content %}
-<div class="col-md-8 offset-md-2">
+{% block content %}
+<div class="container">
     <h1>{{ post.title }}</h1>
     <small>
         {{ post.created_on.date }} |&nbsp;
@@ -13,13 +13,13 @@
     </small>
     <p>{{ post.body | linebreaks }}</p>
     <h5>Leave a comment:</h5>
-    <form action="/blog/{{ post.pk }}/" method="post">
+    <form action="/blog/{{post.pk}}/" method="post">
       {% csrf_token %}
       <div class="form-group">
-          {{ form.author }}
+          {{form.author}}
       </div>
       <div class="form-group">
-          {{ form.body }}
+          {{form.body}}
       </div>
       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
         <i class="material-icons right">send</i>
@@ -29,9 +29,9 @@
     {% for comment in comments %}
     <p>
       On {{comment.created_on.date }}&nbsp;
-      <b>{{ comment.author }}</b> wrote:
+      <b>{{comment.author}}</b> wrote:
     </p>
-    <p>{{ comment.body }}</p>
+    <p>{{comment.body}}</p>
     <hr>
     {% endfor %}
 </div>

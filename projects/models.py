@@ -5,5 +5,5 @@ class Project(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
     technology = models.CharField(max_length=110)
-    image = models.FilePathField(path="/img")
+    image = models.URLField(max_length=1000, default="https://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg")
     link = models.URLField(max_length=250, default='https://github.com/TR-1000')
