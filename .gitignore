@@ -61,7 +61,7 @@ __pycache__
 myvenv
 /static
 .DS_Store
-personal_portfolio/settings.py
+settings.py
 
 # Flask stuff:
 instance/
