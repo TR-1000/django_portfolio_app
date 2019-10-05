@@ -8,15 +8,15 @@
     {% for post in posts %}
     <h3><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h3>
     <small>
-        {{ post.created_on.date }} |&nbsp;
+        {{post.created_on.date}} |&nbsp;
         Categories:&nbsp;
         {% for category in post.categories.all %}
         <a href="{% url 'blog_category' category.name %}">
-            {{ category.name }}
+            {{category.name}}
         </a>&nbsp;
         {% endfor %}
     </small>
-    <p>{{ post.body }}...</p>
+    <p>{{post.body}}...</p>
     {% endfor %}
   </div>
 </div>
