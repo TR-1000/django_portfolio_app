@@ -2,7 +2,7 @@ body {
   background-color: #a5b7c7
 }
 
-nav {
+nav, .page-footer {
   background-color: #08182f
 }
 
@@ -18,6 +18,10 @@ img {
   margin-right: auto;
 }
 
+h2 {
+  margin-top: 0px;
+}
+
 .logo-style {
   color: #039be5
 }
@@ -28,6 +32,17 @@ img {
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
     background-color: #6bc4f0;
+}
+
+.about {
+  background-color: #2158a7;
+  padding: 50px 250px 50px 250px;
+
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
 }
 
 .row {
