@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from projects.models import Project
+from django.http import HttpResponse, FileResponse
+import PyPDF2
+import webbrowser
 
 def project_index(request):
     projects = Project.objects.all()
@@ -14,3 +17,7 @@ def project_detail(request, pk):
         'project': project
     }
     return render(request, 'project_detail.html', context)
+
+def resume(response):
+    response = FileResponse(open("projects\\static\\img\\T_Ross_Resume.pdf", "rb"))
+    return response

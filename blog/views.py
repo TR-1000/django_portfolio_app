@@ -45,3 +45,7 @@ def blog_detail(request, pk):
         "form": form,
     }
     return render(request, "blog_detail.html", context)
+
+    def resume(request):
+        image_data = open("projects\\static\\img\\TakiaRoss_Resume_SEI.pdf", "rb").read()
+        return HttpResponse(image_data, mimetype="application/pdf")

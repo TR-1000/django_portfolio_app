@@ -20,6 +20,10 @@ img {
 
 h2 {
   margin-top: 0px;
+  margin: 0 auto;
+  max-width: 1250px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .logo-style {
@@ -31,7 +35,7 @@ h2 {
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-    background-color: #6bc4f0;
+  background-color: #6bc4f0;
 }
 
 .about {
