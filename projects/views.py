@@ -2,7 +2,11 @@ from django.shortcuts import render, redirect
 from projects.models import Project
 from django.http import HttpResponse, HttpResponseRedirect, FileResponse
 from .forms import ContactForm
-from django.core.mail import send_mail, BadHeaderError
+from django.core.mail import send_mail, BadHeaderError, EmailMessage
+import webbrowser
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 def project_index(request):
     projects = Project.objects.all()
@@ -27,6 +31,8 @@ def resume(response):
     return response
 
 def contact(request):
+    #webbrowser.open("mailto:t.l.ross@outlook.com")
+
     if request.method == 'GET':
         form = ContactForm()
     else:
@@ -36,7 +42,8 @@ def contact(request):
             from_email = form.cleaned_data['from_email']
             message = form.cleaned_data['message']
             try:
-                send_mail(subject, message, from_email, ['admin@example.com'])
+                email = EmailMessage(subject, message, from_email, [os.getenv("TO_EMAIL_ADDRESS")], headers = {'Reply-To': from_email})
+                email.send()
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')

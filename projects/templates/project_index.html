@@ -8,32 +8,38 @@
   </h2>
 
   <div class="contact-btn">
-    <!-- <a  href="{% url 'contact' %}"
+
+    <a  href="{% url 'contact' %}"
        class="btn">
         Contact Me
-    </a> -->
+    </a>
 
-    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Contact Me</a>
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Send and Email</h4>
-        <form method="post">
-          {% csrf_token %}
-          {{ form.as_p }}
-          <div class="form-actions">
-            <button type="submit">Send</button>
-          </div>
-        </form>
+    <div class="modal">
+      <!-- Modal Trigger -->
+      <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Contact Me</a> -->
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Send and Email</h4>
+          <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-actions">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
       </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-      </div>
-    </div>
-    <!-- Modal Structure End -->
-    
+      <!-- Modal Structure End -->
+    </div> -->
+
+
+
   </div>
 </div>
 
