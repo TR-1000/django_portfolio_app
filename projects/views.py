@@ -28,7 +28,7 @@ def project_detail(request, pk):
     return render(request, 'project_detail.html', context)
 
 def resume(response):
-    response = FileResponse(open("projects\\static\\img\\T_Ross_Resume.pdf", "rb"))
+    response = FileResponse(open("staticfiles/img/T_Ross_Resume.pdf", "rb"))
     return response
 
 def contact(request):
@@ -47,7 +47,7 @@ def contact(request):
                 email.send()
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-            messages.success(request, "Email Sent!")    
+            messages.success(request, "Email Sent!")
             return redirect('project_index')
     return render(request, 'contact_form.html', {'form': form})
 
