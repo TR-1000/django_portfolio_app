@@ -3,6 +3,7 @@ from projects.models import Project
 from django.http import HttpResponse, HttpResponseRedirect, FileResponse
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError, EmailMessage
+from django.contrib import messages
 import webbrowser
 import os
 from dotenv import load_dotenv
@@ -46,7 +47,8 @@ def contact(request):
                 email.send()
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-            return redirect('success')
+            messages.success(request, "Email Sent!")    
+            return redirect('project_index')
     return render(request, 'contact_form.html', {'form': form})
 
 def success(request):

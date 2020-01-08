@@ -4,7 +4,19 @@
 
 <!-- <h1>Projects</h1> -->
 <div class="about">
-  <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li class="{{ message.tags }}">
+      <h3>{{ message|safe }}
+      <a href="#" class="close">x</a></h3>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% endif %}
+  <h2> Backend specialist and frontend hacker! :)
   </h2>
 
   <div class="contact-btn">
@@ -17,7 +29,7 @@
 
     <div class="modal">
       <!-- Modal Trigger -->
-      
+
       <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Contact Me</a> -->
 
       <!-- Modal Structure -->
@@ -46,6 +58,7 @@
 
 
 <div class="main">
+  <h3 id="projects-heading">PROJECTS</h3>
 {% for project in projects %}
     <div class="container">
         <div class="card">
