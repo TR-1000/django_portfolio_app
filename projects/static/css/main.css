@@ -76,7 +76,8 @@ padding: 100px 0px 100px 0px
 .contact {
   margin: 0 auto;
   max-width: 75%;
-  padding: 210px;
+  padding: 100px;
+  margin-top: 150px;
 }
 
 textarea {
