@@ -1,5 +1,5 @@
 body {
-  background-color: #a5b7c7
+  background-color: #969696
 }
 
 nav, .page-footer {
@@ -26,6 +26,13 @@ h2 {
   margin-bottom: 50px;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .logo-style {
   color: #039be5
 }
@@ -48,6 +55,10 @@ h2 {
 .contact-btn {
   display: flex;
   justify-content: center;
+}
+
+.main {
+padding: 100px 0px 100px 0px
 }
 
 .row {
