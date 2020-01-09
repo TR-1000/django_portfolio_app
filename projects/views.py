@@ -11,14 +11,12 @@ load_dotenv()
 
 def project_index(request):
     projects = Project.objects.all()
-
-    if request.method == 'GET':
-        form = ContactForm()
-
+    email_address = os.getenv('TO_EMAIL_ADDRESS')
     context = {
         'projects': projects
     }
-    return render(request, 'project_index.html', context, {'form': form})
+
+    return render(request, 'project_index.html', context, {'email_address': email_address} )
 
 def project_detail(request, pk):
     project = Project.objects.get(pk=pk)
