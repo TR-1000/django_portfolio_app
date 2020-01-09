@@ -14,7 +14,21 @@
       $('.close').click(() => {
         $('.messages').hide()
       });
+      $('#contact').click(() => {
+        $.ajax({
+          url: "{% url 'email' %}"
+        }).then(
+          (data) => {
+            console.log(data);
+          },
+          () => {
+              console.log('bad request');
+          }
+        );
+      })
     });
+
+
     </script>
     <link rel="stylesheet" href="/static/css/main.css">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">

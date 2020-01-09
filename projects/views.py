@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from projects.models import Project
-from django.http import HttpResponse, HttpResponseRedirect, FileResponse
+from django.http import HttpResponse, HttpResponseRedirect, FileResponse, JsonResponse
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError, EmailMessage
 from django.contrib import messages
@@ -32,8 +32,6 @@ def resume(response):
     return response
 
 def contact(request):
-    #webbrowser.open("mailto:t.l.ross@outlook.com")
-
     if request.method == 'GET':
         form = ContactForm()
     else:
@@ -51,5 +49,9 @@ def contact(request):
             return redirect('project_index')
     return render(request, 'contact_form.html', {'form': form})
 
-def success(request):
-    return HttpResponse('Success! Thank you for your message.')
+def email(request):
+    try:
+        webbrowser.open("mailto:" + os.getenv('TO_EMAIL_ADDRESS'))
+        return JsonResponse({'status':'ok'})
+    except:
+       return JsonResponse({'status':'error'})
