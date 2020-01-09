@@ -1,6 +1,11 @@
 html, body {
-  background-color: #000;
   height:100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 nav, .page-footer {
@@ -10,21 +15,28 @@ nav, .page-footer {
 nav .brand-logo {
   padding-left: 16px;
   font-size: 1.5rem;
+
 }
 
-img {
-  max-width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.logo-style {
+  color: #039be5
+}
+
+.logo-style {
+  color: #039be5
 }
 
 h2 {
-  margin-top: 0px;
+  background-color: rgb(84, 84, 84, 0.1);
   margin: 0 auto;
   max-width: 1250px;
   text-align: center;
+  margin-top: 90px;
   margin-bottom: 50px;
+}
+
+.main {
+padding: 100px 0px 100px 0px
 }
 
 footer {
@@ -34,37 +46,23 @@ footer {
   width: 100%;
 }
 
-.logo-style {
-  color: #039be5
+textarea {
+  height: 350px;
 }
 
 .modal-content {
   color: #08182f
 }
 
-.btn {
-  background-color: #039be5
+.contact, .detail{
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 100px;
+  margin-top: 140px;
+  min-height: 70%;
 }
 
-.btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #6bc4f0;
-}
-
-.about {
-  background-color: #2158a7;
-  padding: 50px 250px 50px 250px;
-  color: #fff;
-}
-
-.contact-btn {
-  display: flex;
-  justify-content: center;
-}
-
-.main {
-padding: 100px 0px 100px 0px
-}
-
+/* ----------------cards---------------*/
 .row {
   margin-top: 125px;
 }
@@ -74,19 +72,47 @@ padding: 100px 0px 100px 0px
   background-color: #f0f0f0
 }
 
-.contact {
+.detail{
   margin: 0 auto;
-  max-width: 75%;
-  padding: 100px;
-  margin-top: 140px;
-  min-height: 70%;
+  max-width: 95%;
+  min-height: 90%;
 }
 
-textarea {
-  height: 350px;
+/* ----------------images---------------*/
+.card img {
+  max-width: 99%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h3 {
-  text-align: center;
+
+/* ----------------parallax---------------*/
+.parallax img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  /* background-color: #2158a7; */
+  font-family: 'Orbitron';
+  padding: 50px 250px 50px 250px;
   color: #fff;
+  overflow: auto;
+
+}
+
+/* -----------------buttons-------------- */
+.btn {
+  background-color: #039be5
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #6bc4f0;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
 }

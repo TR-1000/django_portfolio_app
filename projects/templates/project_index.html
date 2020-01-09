@@ -2,8 +2,8 @@
 {% load static %}
 {% block content %}
 
-<div class="about">
 
+<div class="parallax-container about" style="height: 50%">
   {% if messages %}
   <ul class="messages">
     {% for message in messages %}
@@ -15,8 +15,10 @@
   </ul>
 
   {% endif %}
-  <h2> Backend specialist and frontend hacker! :)
-  </h2>
+  <span><h2> Backend specialist and frontend hacker!<br>
+     I specialize in the Python programming languages. These are some of my most recent projects. :)
+  </h2></span>
+
 
   <div class="contact-btn">
 
@@ -47,11 +49,15 @@
       <!-- Modal Structure End -->
     </div>
   </div>
+      <div class="parallax">
+        <img src="https://images.unsplash.com/photo-1527600478564-488952effedb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80">
+      </div>
 </div>
 
 
+
+
 <div class="main">
-  <h3 id="projects-heading">PROJECTS</h3>
 {% for project in projects %}
     <div class="container">
         <div class="card">

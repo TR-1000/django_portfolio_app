@@ -50,6 +50,6 @@ def contact(request):
 def email(request):
     try:
         webbrowser.open("mailto:" + os.getenv('TO_EMAIL_ADDRESS'))
-        return JsonResponse({'status':'ok'})
+        return redirect('project_index')
     except:
-       return JsonResponse({'status':'error'})
+        return redirect('project_index')
