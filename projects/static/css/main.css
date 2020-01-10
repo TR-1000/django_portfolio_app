@@ -104,7 +104,8 @@ textarea {
   font-family: 'Orbitron';
   padding: 50px 250px 50px 250px;
   color: #fff;
-  overflow: auto;
+  overflow-y: auto;
+
 
 }
 
