@@ -2,6 +2,10 @@ html, body {
   height:100%;
 }
 
+body {
+  background-color: black;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -27,7 +31,8 @@ nav .brand-logo {
 }
 
 h2 {
-  background-color: rgb(84, 84, 84, 0.1);
+  /* background-color: rgb(84, 84, 84, 0.2); */
+  text-shadow: 4px 4px #000;
   margin: 0 auto;
   max-width: 1250px;
   text-align: center;
