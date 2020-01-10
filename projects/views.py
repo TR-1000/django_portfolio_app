@@ -11,12 +11,12 @@ load_dotenv()
 
 def project_index(request):
     projects = Project.objects.all()
-    email_address = os.getenv('TO_EMAIL_ADDRESS')
+
     context = {
         'projects': projects
     }
 
-    return render(request, 'project_index.html', context, {'email_address': email_address} )
+    return render(request, 'project_index.html', context,  )
 
 def project_detail(request, pk):
     project = Project.objects.get(pk=pk)
@@ -46,10 +46,3 @@ def contact(request):
             messages.success(request, "Email Sent!")
             return redirect('project_index')
     return render(request, 'contact_form.html', {'form': form})
-
-def email(request):
-    try:
-        webbrowser.open("mailto:" + os.getenv('TO_EMAIL_ADDRESS'))
-        return redirect('project_index')
-    except:
-        return redirect('project_index')
