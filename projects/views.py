@@ -27,6 +27,7 @@ def project_detail(request, pk):
 
 def resume(response):
     response = FileResponse(open("staticfiles/img/T_Ross_Resume.pdf", "rb"))
+    response['Content-Disposition'] = 'inline;ross_.pdf'
     return response
 
 def contact(request):

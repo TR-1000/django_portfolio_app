@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  background-color: black;
+  background-color: #010813;
 }
 
 nav {
@@ -13,7 +13,7 @@ nav {
 }
 
 nav, .page-footer {
-  background-color: #08182f
+  background-color: #08182f;
 }
 
 nav .brand-logo {
