@@ -104,9 +104,12 @@ textarea {
   font-family: 'Orbitron';
   padding: 50px 250px 50px 250px;
   color: #fff;
-  overflow-y: auto;
+  overflow-y: scroll;
+}
 
-
+/* Hide scrollbar for Chrome, Safari and Opera */
+.about::-webkit-scrollbar {
+  display: none;
 }
 
 /* -----------------buttons-------------- */
