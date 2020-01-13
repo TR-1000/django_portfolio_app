@@ -77,10 +77,19 @@ textarea {
   background-color: #f0f0f0
 }
 
+
+
+.m7 {
+  min-height: 99%;
+
+}
+
 .detail{
   margin: 0 auto;
-  max-width: 95%;
-  min-height: 90%;
+  max-width: 85%;
+  /* padding: 100px; */
+  margin-top: 140px;
+  min-height: 80%;
 }
 
 /* ----------------images---------------*/
@@ -124,4 +133,8 @@ textarea {
 .contact-btn {
   display: flex;
   justify-content: center;
+}
+
+.card-title {
+  font-family: sans-serif;
 }
