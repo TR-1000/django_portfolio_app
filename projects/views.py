@@ -1,12 +1,15 @@
+
+
 from django.shortcuts import render, redirect
-from projects.models import Project
 from django.http import HttpResponse, HttpResponseRedirect, FileResponse, JsonResponse
-from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError, EmailMessage
 from django.contrib import messages
-import webbrowser
-import os
+from projects.models import Project
+from .forms import ContactForm
+
+# dotenv environmental variable dependancies
 from dotenv import load_dotenv
+import os
 load_dotenv()
 
 def project_index(request):
