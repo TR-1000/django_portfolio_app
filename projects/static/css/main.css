@@ -67,6 +67,8 @@ textarea {
   min-height: 70%;
 }
 
+
+
 /* ----------------cards---------------*/
 .row {
   margin-top: 125px;
@@ -77,20 +79,16 @@ textarea {
   background-color: #f0f0f0
 }
 
-
-
-.m7 {
-  min-height: 99%;
-
-}
-
 .detail{
   margin: 0 auto;
-  max-width: 85%;
   /* padding: 100px; */
-  margin-top: 140px;
-  min-height: 80%;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  max-width: 58%;
+
 }
+
+
 
 /* ----------------images---------------*/
 .card img {
@@ -99,6 +97,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 
 /* ----------------parallax---------------*/
@@ -120,6 +119,8 @@ textarea {
 .about::-webkit-scrollbar {
   display: none;
 }
+
+
 
 /* -----------------buttons-------------- */
 .btn {

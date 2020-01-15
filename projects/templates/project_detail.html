@@ -5,17 +5,12 @@
 
 
   <div class="col s12 m7">
-
     <div class="card detail">
-
-
       <div class="card-image">
         <img src="{{project.image}}">
-
       </div>
       <div class="card-content">
         <h4 class="card-title">{{project.title}}</h4>
-        <br>
         <h6>{{project.description}}</h6>
         <br>
         <h6>Built With:</h6>
@@ -24,8 +19,6 @@
         <a target="_blank" href="{{ project.link }}"><p>See more on GitHub</p></a>
       </div>
       <div class="card-action">
-
-
         <a href="{% url 'project_index' %}" class="btn">Back</a>
       </div>
     </div>
