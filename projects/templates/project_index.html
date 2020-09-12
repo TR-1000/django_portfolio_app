@@ -16,7 +16,7 @@
 
   {% endif %}
 
-  <h2> Backend Specialist, Frontend Hacker<br>
+  <h2> Backend specialist, frontend hacker.<br>
      <span class="subheading">These are some of my most recent web development projects.</span>
   </h2>
       <div class="parallax">
@@ -29,15 +29,17 @@
 
 <div class="main">
 {% for project in projects %}
+<div class="card">
   <a href="{% url 'project_detail' project.pk %}">
-    <div class="card">
-      <img class="" src="{{project.image}}">
-      <div class="card-body">
-        <h4 class="card-title">{{project.title}}</h4>
-      </div>
-    </div>
+    <img class="" src="{{project.image}}">
   </a>
-  {% endfor %}
+    <div class="card-body">
+      <h4 class="card-title">{{project.title}}</h4>
+
+
+    </div>
+</div>
+    {% endfor %}
 </div>
 
 {% endblock %}

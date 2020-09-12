@@ -1,0 +1,141 @@
+html, body {
+  height:100%;
+}
+
+body {
+  background-color: #d2d2d2;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+nav, .page-footer {
+  background-color: #08182f;
+}
+
+nav .brand-logo {
+  padding-left: 16px;
+  font-size: 1.5rem;
+
+}
+
+.logo-style {
+  color: #039be5
+}
+
+.logo-style {
+  color: #039be5
+}
+
+h2 {
+  /* background-color: rgb(84, 84, 84, 0.2); */
+  text-shadow: 4px 4px #000;
+  margin: 0 auto;
+  max-width: 1250px;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.main {
+padding: 100px 0px 100px 0px
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+textarea {
+  height: 350px;
+}
+
+.modal-content {
+  color: #08182f
+}
+
+.contact, .detail{
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 100px;
+  margin-top: 140px;
+  min-height: 70%;
+}
+
+
+
+/* ----------------cards---------------*/
+.row {
+  margin-top: 125px;
+}
+
+.card {
+  padding: 15px;
+  background-color: #f0f0f0
+}
+
+.detail{
+  margin: 0 auto;
+  /* padding: 100px; */
+  margin-top: 70px;
+  margin-bottom: 100px;
+  max-width: 58%;
+
+}
+
+
+
+/* ----------------images---------------*/
+.card img {
+  max-width: 99%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* ----------------parallax---------------*/
+.parallax img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  /* background-color: #2158a7; */
+  font-family: 'Orbitron';
+  padding: 50px 250px 50px 250px;
+  color: #fff;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.about::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* -----------------buttons-------------- */
+.btn {
+  background-color: #039be5
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #6bc4f0;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  font-family: sans-serif;
+}
