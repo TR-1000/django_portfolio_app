@@ -48,7 +48,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  padding: 100px 0px 100px 0px
+  padding: 0px 0px 100px 0px
 }
 
 footer {
@@ -84,9 +84,8 @@ textarea {
 .card {
   padding: 15px;
   background-color: #f0f0f0;
-  max-width: 60em;
+  max-width: 55em;
   margin: 5em;
-  font-family: 'Orbitron';
 }
 
 .detail{
