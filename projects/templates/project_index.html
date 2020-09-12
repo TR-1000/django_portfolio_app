@@ -29,17 +29,15 @@
 
 <div class="main">
 {% for project in projects %}
-<div class="card">
   <a href="{% url 'project_detail' project.pk %}">
-    <img class="" src="{{project.image}}">
-  </a>
-    <div class="card-body">
-      <h4 class="card-title">{{project.title}}</h4>
-
-
+    <div class="card">
+      <img class="" src="{{project.image}}">
+      <div class="card-body">
+        <h4 class="card-title">{{project.title}}</h4>
+      </div>
     </div>
-</div>
-    {% endfor %}
+  </a>
+  {% endfor %}
 </div>
 
 {% endblock %}
