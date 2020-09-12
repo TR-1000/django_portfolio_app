@@ -15,48 +15,12 @@
   </ul>
 
   {% endif %}
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h2> Backend specialist and frontend hacker.<br>
-     These are some of my most recent web development projects.
+
+  <h2> Backend specialist, frontend hacker.<br>
+     <span class="subheading">These are some of my most recent web development projects.</span>
   </h2>
-
-
-  <div class="contact-btn">
-
-    <a  id="contact" href= "mailto:{{ email_address }}" class="btn">Contact Me</a>
-
-
-    <div class="modal">
-      <!-- Modal Trigger -->
-
-      <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Contact Me</a> -->
-
-      <!-- Modal Structure -->
-      <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h4>Send and Email</h4>
-          <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <div class="form-actions">
-              <button type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-      </div>
-      <!-- Modal Structure End -->
-    </div>
-  </div>
       <div class="parallax">
-        <img src="{% static 'img\photo-1527600478564-488952effedb.jpg' %}">
+        <img style="opacity: 0.5;" src="{% static 'img\photo-1527600478564-488952effedb.jpg' %}">
       </div>
 </div>
 
@@ -65,19 +29,16 @@
 
 <div class="main">
 {% for project in projects %}
-    <div class="container">
-        <div class="card">
-            <img class="" src="{{project.image}}">
-            <div class="card-body">
-              <h4 class="card-title">{{project.title}}</h4>
+<div class="card">
+  <a href="{% url 'project_detail' project.pk %}">
+    <img class="" src="{{project.image}}">
+  </a>
+    <div class="card-body">
+      <h4 class="card-title">{{project.title}}</h4>
 
-                <a href="{% url 'project_detail' project.pk %}"
-                   class="btn">
-                    More...
-                </a>
-            </div>
-        </div>
+
     </div>
+</div>
     {% endfor %}
 </div>
 
