@@ -28,22 +28,22 @@
   <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="{% url 'project_index' %}" class="brand-logo">Takia Ross <span class="logo-style">Software Engineer</span></a>
+        <a href="{% url 'project_index' %}" class="brand-logo"><strong>Takia Ross</strong> <span class="logo-style">Full-Stack Developer</span></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile"class="right hide-on-med-and-down">
-          <li><a href= "mailto:{{ email_address }}">Contact</a></li>
-          <!-- <li><a target="_blank" href="{% url 'resume' %}">Resume</a></li> -->
+          <li><a target="_blank" href="{% url 'contact' %}">Resume</a></li>
           <li><a target="_blank" href="https://github.com/TR-1000">GitHub</a></li>
           <li><a target="_blank" href="https://www.linkedin.com/in/takia-ross/">LinkedIn</a></li>
+          <li><a href= "mailto:{{ email_address }}">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li><a href= "mailto:{{ email_address }}">Contact</a></li>
-      <!-- <li><a target="_blank" href="{% url 'resume' %}">Resume</a></li> -->
+      <li><a target="_blank" href="{% url 'contact' %}">Resume</a></li>
       <li><a target="_blank" href="https://github.com/TR-1000">GitHub</a></li>
       <li><a target="_blank" href="https://www.linkedin.com/in/takia-ross/">LinkedIn</a></li>
+      <li><a href= "mailto:{{ email_address }}">Contact</a></li>
     </ul>
 
 
