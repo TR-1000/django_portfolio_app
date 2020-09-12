@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  background-color: #525659;
+  background-color: #b5b5b5;
 }
 
 nav {
@@ -86,6 +86,7 @@ textarea {
   background-color: #f0f0f0;
   max-width: 60em;
   margin: 5em;
+  font-family: 'Orbitron';
 }
 
 .detail{
@@ -94,7 +95,6 @@ textarea {
   margin-top: 70px;
   margin-bottom: 100px;
   max-width: 58%;
-
 }
 
 
@@ -148,7 +148,7 @@ textarea {
 }
 
 .card-title {
-  font-family: sans-serif;
+  font-family: fantasy;
 }
 
 /* -----------------iframe----------------- */
