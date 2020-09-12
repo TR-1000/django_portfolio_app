@@ -7,6 +7,7 @@ from django.contrib import messages
 from projects.models import Project
 from .forms import ContactForm
 
+
 # dotenv environmental variable dependancies
 from dotenv import load_dotenv
 import os
@@ -49,4 +50,4 @@ def contact(request):
                 return HttpResponse('Invalid header found.')
             messages.success(request, "Email Sent!")
             return redirect('project_index')
-    return render(request, 'contact_form.html', {'form': form})
+    return render(request, 'resume.html', {'form': form})
