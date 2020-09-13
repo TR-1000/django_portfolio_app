@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv("S_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['tr-1000.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['tr-1000.herokuapp.com', 'localhost', 'tlross.info']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projects',
     'blog',
+    'home',
 ]
 
 MIDDLEWARE = [
