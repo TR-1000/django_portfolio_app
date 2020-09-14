@@ -1,27 +1,26 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-
-
-
+<link rel="stylesheet" type="text/css" href="{% static 'css/scribbler-global.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/scribbler-landing.css' %}">
 
     <div class="card detail">
       <div class="card-image">
         <img src="{{project.image}}">
       </div>
       <div class="card-content">
-        <h4 class="card-title">{{project.title}}</h4>
-        <h6>{{project.description}}</h6>
-        <br>
-        <h6>Built With:</h6>
-        <p>{{project.technology}}</p>
-        <br>
-        <a target="_blank" href="{{ project.link }}"><p>See more on GitHub</p></a>
+        <h2 class="card-title">{{project.title}}</h2>
+        <span>{{project.description}}</span>
+
+        <h3 class="card-title">Built With:</h3>
+        <span>{{project.technology}}</span>
+
+        <a class="link link--dark"target="_blank" href="{{ project.link }}"><h3 class="card-title" id="repo">See more on GitHub</h3></a><br>
       </div>
-      <div class="card-action">
-        <a href="{% url 'project_index' %}" class="btn">Back</a>
-      </div>
+      <!-- <div class="card-action">
+        <a href="{% url 'projects' %}" class="button--secondary">Back</a>
+      </div> -->
     </div>
-  
+
 
 {% endblock %}

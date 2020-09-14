@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv("S_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.getenv("DEBUG")
 
 ALLOWED_HOSTS = ['tr-1000.herokuapp.com', 'localhost', 'tlross.info']
 
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projects',
     'blog',
-    # 'home',
+    'home',
 ]
 
 MIDDLEWARE = [

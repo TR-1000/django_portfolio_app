@@ -3,7 +3,7 @@
 {% block content %}
 
 
-<div class="parallax-container about" style="height: 55%">
+<!-- <div class="parallax-container about" style="height: 55%">
   {% if messages %}
   <ul class="messages">
     {% for message in messages %}
@@ -22,23 +22,28 @@
       <div class="parallax">
         <img style="opacity: 0.5;" src="{% static 'img\photo-1527600478564-488952effedb.jpg' %}">
       </div>
+</div> -->
+
+<div class="hero">
+  <h1 class="hero__title">PROJECTS</h1>
+  <!-- <h4 class="hero__description">Back-End Specialist, Front_End Hacker</h4> -->
 </div>
 
 
-
-
-<div class="main">
+<div class="hero__terminal" id="projects">
 {% for project in projects %}
+<a href="{% url 'project_detail' project.pk %}">
 <div class="card">
-  <a href="{% url 'project_detail' project.pk %}">
+
     <img class="" src="{{project.image}}">
-  </a>
+
     <div class="card-body">
-      <h4 class="card-title">{{project.title}}</h4>
+      <h2 class="card-title">{{project.title}}</h2>
 
 
     </div>
 </div>
+</a>
     {% endfor %}
 </div>
 

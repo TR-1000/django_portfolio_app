@@ -7,6 +7,7 @@ class Project(models.Model):
     technology = models.CharField(max_length=110)
     image = models.URLField(max_length=1000, default="https://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg")
     link = models.URLField(max_length=250, default='https://github.com/TR-1000')
+    url = models.URLField(max_length=250, unique=True, null=True)
 
     def __str__(self):
         return self.title

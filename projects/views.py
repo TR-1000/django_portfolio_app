@@ -13,8 +13,8 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
-def project_index(request):
-    projects = Project.objects.all()
+def projects(request):
+    projects = Project.objects.all().order_by('id').reverse()
 
     context = {
         'projects': projects
