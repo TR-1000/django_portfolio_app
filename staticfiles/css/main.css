@@ -54,11 +54,13 @@ h2 {
   padding: 0px 0px 100px 0px
 }
 
-footer {
+.page-footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 45px;
+  padding-top: 1px;
 }
 
 textarea {
@@ -89,14 +91,16 @@ textarea {
   background-color: #f0f0f0;
   max-width: 55em;
   margin: 5em;
-
 }
 
 .detail{
   margin: 0 auto;
   margin-top: 10em;
   margin-bottom: 10em;
+}
 
+.card-title {
+  font-family: fantasy, serif;
 }
 
 
@@ -151,9 +155,7 @@ textarea {
   justify-content: center;
 }
 
-.card-title {
-  font-family: fantasy;
-}
+
 
 /* -----------------iframe----------------- */
 object {
