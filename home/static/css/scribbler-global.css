@@ -337,7 +337,7 @@ table td:first-child {
   padding: 15px;
   background-color: #f0f0f0;
   max-width: 55em;
-  margin: 5em;
+  margin: 1em;
 }
 
 .detail{
@@ -382,6 +382,10 @@ table td:first-child {
 #comma {
   font-size: 14px;
   font-weight: 600;
+}
+
+div#desc {
+    white-space: normal;
 }
 
 .underline-link {

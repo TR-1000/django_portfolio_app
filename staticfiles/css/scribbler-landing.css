@@ -39,9 +39,9 @@ nav {
 }
 
 .hero__terminal pre {
-  white-space: pre-line;
   padding-top: 1rem;
   margin-bottom: 22em;
+  white-space: pre;
 }
 
 /* feature section */
@@ -158,7 +158,7 @@ nav {
 
 @media (max-width: 750px) {
   .hero__terminal {
-    width: 70%;
+    width: 98%;
   }
   .tab__container > ul {
     right: auto;
