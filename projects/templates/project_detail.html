@@ -9,18 +9,19 @@
         <img src="{{project.image}}">
       </div>
       <div class="card-content">
-        <h2 class="card-title">{{project.title}}</h2>
+        <a class="underline-link" target="_blank" href="{{project.url}}"><h2 class="card-title">{{project.title}}</h2></a>
         <span>{{project.description}}</span>
 
         <h3 class="card-title">Built With:</h3>
         <span>{{project.technology}}</span>
 
-        <a class="link link--dark"target="_blank" href="{{ project.link }}"><h3 class="card-title" id="repo">See more on GitHub</h3></a><br>
+        <a class="link link--dark" target="_blank" href="{{ project.link }}"><h3 class="card-title" id="repo">See more on GitHub</h3></a><br>
       </div>
       <!-- <div class="card-action">
         <a href="{% url 'projects' %}" class="button--secondary">Back</a>
       </div> -->
     </div>
 
-<script src="{% static 'js/scribbler.js' %}" >
+
 {% endblock %}
+<script src="{% static 'js/scribbler.js' %}" >
