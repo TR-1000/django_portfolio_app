@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/scribbler-global.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'css/scribbler-landing.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/scribbler-global.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/scribbler-landing.css' %}">
+  <script src="{% static 'js/scribbler.js' %}"></script>
+  <style media="screen">
+    html, body {
+      background-color: #f0f0f0;
+    }
+
+  </style>
 
     <div class="card detail">
       <div class="card-image">
@@ -23,5 +31,5 @@
     </div>
 
 
+
 {% endblock %}
-<script src="{% static 'js/scribbler.js' %}" >
