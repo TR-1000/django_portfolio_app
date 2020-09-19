@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv("S_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG")
 
-ALLOWED_HOSTS = ['tr-1000.herokuapp.com', 'localhost', 'tlross.info']
+ALLOWED_HOSTS = ['tr-1000.herokuapp.com', 'localhost', 'tlross.info', 'www.tlross.info']
 
 
 # Application definition
