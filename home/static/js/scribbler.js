@@ -1,3 +1,23 @@
+// Get api data
+fetch("https://cors-anywhere.herokuapp.com/rossapi.wl.r.appspot.com/")
+  .then(response => response.json())
+  .then((data) => {
+    document.getElementById('terminal').innerText = JSON.stringify(data, undefined, 4) // prettify json
+    hljs.highlightBlock(document.getElementById('terminal')); // syntax highlighting
+    let strings = document.getElementsByClassName('hljs-string'); // find span tags with class .hljs-string
+    for (string of strings) {
+      // if string is 200 characters or greater replace span tag with div and enable text wrapping
+      if(string.innerText.length >= 200) {
+        let div = document.createElement("div");
+        div.innerHTML = string.innerText;
+        div.setAttribute("style","display:inline-flex; max-width:45%;");
+        div.setAttribute("id","desc");
+        div.setAttribute("class","hljs-string");
+        string.parentNode.replaceChild(div, string);
+      }
+    }
+  });
+
 // utilities
 var get = function (selector, scope) {
   scope = scope ? scope : document;
@@ -12,7 +32,8 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `HTTP 200 OK
+  var txt =
+  `HTTP 200 OK
   Content-Type: application/json
 `;
   var speed = 60;
