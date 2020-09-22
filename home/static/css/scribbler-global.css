@@ -391,3 +391,22 @@ div#desc {
 .underline-link {
   text-decoration: underline;
 }
+
+.hljs-attr {
+  color: #5bbaff
+}
+
+.hljs-string {
+  color: #e4e4e4
+}
+
+
+
+/* Dark Mode */
+/* nav {background-color: #000000;}
+.hero__title {color: #ffffff;}
+.hero__description {color: #6d9cbe;}
+.hero {background-color: #111;}
+.hero__terminal {box-shadow: 0px 12px 36.8px 9.2px #000000;}
+html, body {background-color: #111111;}
+.footer {background-color: #000;} */
