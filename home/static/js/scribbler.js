@@ -1,4 +1,4 @@
-// Get api data
+// get api data
 fetch("https://rossapi.wl.r.appspot.com/")
   .then(response => response.json())
   .then((data) => {
