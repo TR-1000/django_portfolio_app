@@ -1,5 +1,5 @@
-// Get api data
-fetch("https://cors-anywhere.herokuapp.com/rossapi.wl.r.appspot.com/")
+// get api data
+fetch("https://rossapi.wl.r.appspot.com/")
   .then(response => response.json())
   .then((data) => {
     document.getElementById('terminal').innerText = JSON.stringify(data, undefined, 4) // prettify json
